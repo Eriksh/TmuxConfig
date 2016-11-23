@@ -11,7 +11,7 @@ fi
 
 #Save current working directory & filename
 cwd = $(pwd)
-fn = 'tmuxConfig.sh'
+file = "$cwd/tmuxConfig.sh"
 
 #Download tmux
 pacman -S tmux --noconfirm
@@ -22,10 +22,9 @@ wget https://raw.githubusercontent.com/Eriksh/tmux-Configured/master/tmux.conf
 mv -f tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
-if(-f ~/.tmux.conf)
-	then
+if [ -f ~/.tmux.conf ]; then
 	echo 'Removing tmuxConfig.sh from system...'
-	rm -f $cwd/$fn
+	rm -f $file
 	echo 'Installation & configuration completed!'
 else
 	echo 'Was unable to find ~/.tmux.conf, please verify tmux.conf was downloaded into your home direcory.'
