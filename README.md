@@ -12,14 +12,14 @@ To install tmux the way I prefer it, please enter the following command using su
 What is Configured
 ---
 The following has been configued for tmux:
-	* Prefix keys set to Cntl-j
-	* Lengthened the amount of time status messages are displayed
-	* Set window index to start at 1 instead of 0
-	* Automatically set window title
-	* Key Bindings for copy-past
-	* Easier window split keys
-	* Alt-arrow keys to switch panes
-	* Allow arrow keys to be used immediately after changing windows
-	* No delay on escape key press
-	* Mouse mode enabled
-	* Changes to theme and status bar
+* Prefix keys set to Ctrl-j
+* Lengthened the amount of time status messages are displayed
+* Set window index to start at 1 instead of 0
+* Automatically set window title
+* Key Bindings for copy-past
+* Easier window split keys
+* Alt-arrow keys to switch panes
+* Allow arrow keys to be used immediately after changing windows
+* No delay on escape key press
+* Mouse mode enabled
+* Changes to theme and status bar
