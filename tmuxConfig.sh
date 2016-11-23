@@ -4,6 +4,7 @@
 
 #Ensure the script is being run as root
 if($USER != 'root')
+  then
 	echo 'This script must be run as root'
 	exit
 fi
@@ -17,11 +18,12 @@ pacman -S tmux --noconfirm
 
 #Download configuration file into home directory & rename
 cd ~
-wget https://https://github.com/Eriksh/LinuxConfig-Scripts/blob/master/Tmux-Configured/tmux.conf
+wget https://raw.githubusercontent.com/Eriksh/LinuxConfig-Scripts/Tmux-Configured/master/tmux.conf
 mv -f tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
 if(-f ~/.tmux.conf)
+	then
 	echo 'Removing tmuxConfig.sh from system...'
 	rm -f $cwd/$fn
 	echo 'Installation & configuration completed!'
