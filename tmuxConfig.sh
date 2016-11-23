@@ -18,7 +18,7 @@ pacman -S tmux --noconfirm
 
 #Download configuration file into home directory & rename
 cd ~
-wget https://raw.githubusercontent.com/Eriksh/LinuxConfig-Scripts/Tmux-Configured/master/tmux.conf
+wget https://raw.githubusercontent.com/Eriksh/tmux-Configured/master/tmux.conf
 mv -f tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
