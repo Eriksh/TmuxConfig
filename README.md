@@ -2,13 +2,12 @@ TmuxConfig
 ==========
 Warning
 ---
-This script is only designed to work on arch linux atm.
+This script is only designed to work on Arch Linux only.
 
 Installation / Configure
 ---
-To install/configure Tmux the way I prefer it, please enter the following command:
-```https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/setup.sh && chmod +x setup.sh && ./setup.sh
-```
+To install tmux the way I prefer it, please enter the following command using sudo:
+`https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/setup.sh && chmod +x setup.sh && ./setup.sh`
 
 What is Configured
 ---
