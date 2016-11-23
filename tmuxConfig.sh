@@ -10,8 +10,8 @@ if($USER != 'root')
 fi
 
 #Save current working directory & filename
-cwd = $(pwd)
-file = "$cwd/tmuxConfig.sh"
+cwd=$(pwd)
+file="$cwd/tmuxConfig.sh"
 
 #Download tmux
 pacman -S tmux --noconfirm
