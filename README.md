@@ -12,7 +12,7 @@ To install tmux the way I prefer it, please enter the following command using su
 What is Configured
 ---
 The following has been configued for tmux:
-	* Prefix keys set to Cntr-j
+	* Prefix keys set to Cntl-j
 	* Lengthened the amount of time status messages are displayed
 	* Set window index to start at 1 instead of 0
 	* Automatically set window title
