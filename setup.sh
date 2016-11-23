@@ -1,6 +1,8 @@
 #!/bin/bash
 #This script automatically downloads &
-#configures tmux.
+#configures tmux.ls  
+#
+#Created by Erik Hall
 
 #Ensure the script is being run as root
 if($USER != 'root')
@@ -11,7 +13,7 @@ fi
 
 #Save current working directory & filename
 cwd=$(pwd)
-file="$cwd/tmuxConfig.sh"
+file="$cwd/setup.sh"
 
 #Download tmux
 pacman -S tmux --noconfirm
@@ -23,7 +25,7 @@ mv -f tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
 if [ -f ~/.tmux.conf ]; then
-	echo 'Removing tmuxConfig.sh from system...'
+	echo "Removing $file from system..."
 	rm -f $file
 	echo 'Installation & configuration completed!'
 else
