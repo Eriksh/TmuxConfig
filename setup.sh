@@ -26,8 +26,8 @@ mv -f tmux.conf ~/.tmux.conf
 #Confirm file was downloaded & renamed
 if [ -f ~/.tmux.conf ]; then
 	echo "Removing $file from system..."
-	rm -f $file
-	echo 'Installation & configuration completed!'
+	rm -f $file && echo 'Installation & configuration completed!' || echo "Failed to remove $file"
+	
 else
 	echo 'Was unable to find ~/.tmux.conf, please verify tmux.conf was downloaded into your home direcory.'
 fi
