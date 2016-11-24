@@ -5,8 +5,7 @@
 #Created by Erik Hall
 
 #Ensure the script is being run as root
-if($USER != 'root')
-  then
+if ! [ $(id -u)=0 ]; then
 	echo 'This script must be run as root'
 	exit
 fi
