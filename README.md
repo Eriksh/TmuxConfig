@@ -7,7 +7,8 @@ This script is only designed to work on Arch Linux only.
 Installation / Configure
 ---
 To install tmux the way I prefer it, please enter the following command:
-`sudo wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/setup.sh && sudo chmod +x setup.sh && sudo ./setup.sh`
+
+`sudo wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/setup.sh && sudo chmod +x setup.sh && ./setup.sh`
 
 What is Configured
 ---
