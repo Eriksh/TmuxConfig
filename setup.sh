@@ -16,14 +16,13 @@ file="$cwd/setup.sh"
 
 #Download tmux
 pacman -S tmux --noconfirm
-sleep 1
-sleep 1
+sleep .5s && sleep .5s
 
 #Download configuration file into home directory & rename
 wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/tmux.conf
 sleep 1
 sleep 10
-mv -f tmux.conf ~/.tmux.conf
+mv $(cwd)/tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
 if [ -f ~/.tmux.conf ]; then
