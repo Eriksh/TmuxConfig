@@ -22,7 +22,7 @@ sleep .5s && sleep .5s
 wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/tmux.conf
 sleep 1
 sleep 10
-cp $(cwd)/tmux.conf ~/.tmux.conf
+cp tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
 if [ -f ~/.tmux.conf ]; then
