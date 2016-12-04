@@ -22,12 +22,12 @@ sleep .5s && sleep .5s
 wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/tmux.conf
 sleep 1
 sleep 10
-mv $(cwd)/tmux.conf ~/.tmux.conf
+cp $(cwd)/tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
 if [ -f ~/.tmux.conf ]; then
-	echo "Removing $file from system..."
-	rm -f $file && echo 'Installation & configuration completed!' || echo "Failed to remove $file"
+	#echo "Removing $file from system..."
+	#rm -f $file && echo 'Installation & configuration completed!' || echo "Failed to remove $file"
 
 else
 	echo 'Was unable to find ~/.tmux.conf, please verify tmux.conf was downloaded into your home direcory.'
