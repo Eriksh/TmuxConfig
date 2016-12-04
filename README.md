@@ -7,12 +7,12 @@ This script is only designed to work on Arch Linux only.
 Installation / Configure
 ---
 To install tmux the way I prefer it, please enter the following command:
-`sudo wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/setup.sh && chmod +x setup.sh && ./setup.sh`
+`sudo wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/setup.sh && sudo chmod +x setup.sh && sudo ./setup.sh`
 
 What is Configured
 ---
 The following has been configued for tmux:
-* Prefix keys set to Ctrl-z
+* Prefix keys set to Ctrl-c
 * Lengthened the amount of time status messages are displayed
 * Set window index to start at 1 instead of 0
 * Automatically set window title
