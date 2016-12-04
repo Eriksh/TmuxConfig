@@ -20,7 +20,7 @@ pacman -S tmux --noconfirm
 #Download configuration file into home directory & rename
 cd ~
 wget https://raw.githubusercontent.com/Eriksh/TmuxConfig/master/tmux.conf
-sleep 1s
+sleep 10s
 mv -f tmux.conf ~/.tmux.conf
 
 #Confirm file was downloaded & renamed
